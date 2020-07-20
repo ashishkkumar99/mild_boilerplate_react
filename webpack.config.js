@@ -7,6 +7,9 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "[name].js",
   },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+  },
   module: {
     rules: [
       {
