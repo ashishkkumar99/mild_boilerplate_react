@@ -20,7 +20,15 @@
   https://github.com/ashishkkumar99/mild_boilerplate_react.git => add remote url in origin variable
 - git push -u origin master => pushed to master branch in remote repo
 
-## bable, webpack and react-hot-loder
-For buliding JSX and ESnext scripts webpack needs bable-loader.
-To integrate react-hot-loader in the webpack, add react-hot-loader/babel plugin to babel and export your root component using hot API of react-hot-loader.
-Also make sure that the hot key in devServer option of webpack.config.js is set to true, this allows HMR(Hot module replacement).
+
+## Bable, Webpack and react-hot-loder
+For buliding JSX and ESnext scripts webpack needs bable loader.
+To integrate react-hot-loader in the webpack-dev-server, add react-hot-loader/babel plugin to babel and export your root component using hot API of react-hot-loader.
+Also make sure that the hot key in devServer option of webpack.deve.js is set to true, this allows HMR(Hot module replacement).
+Required Installation
+```bash
+npm install babel babel-loader webpack webpack-dev-server react-hot-loader
+```
+
+## Install react and react-dom
+`npm install -S react react-dom`
